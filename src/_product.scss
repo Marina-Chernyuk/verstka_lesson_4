@@ -1,0 +1,134 @@
+/*-------блок с карточками-------*/
+
+.product__box-mb-113 {
+    margin-bottom: 113px;
+}
+
+.product__box_title {
+    margin-top: 10px;
+    color: #635454;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: 0.75px;
+}
+
+.product__box_subtitle {
+    color: #9f9f9f;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: 0.35px;
+    margin-top: 16px;
+}
+
+.product__box_all {
+    display: grid; /*грид сетка*/
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    margin-top: 60px;
+    grid-gap: 30px;
+}
+
+.product__box_card {
+    box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.16);
+    position: relative;
+    /* position: relative для размещения внутри кнопки ADD */
+
+    &_add {
+        background-color: transparent;
+        border: none;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.product__box_img {
+    width: 100%;
+}
+
+.product__box_card:hover .product__box_img {
+    /* добавляем затемнение при наведении на фото */
+    filter: brightness(50%);
+}
+
+.product__box_card:hover .product__box_add-to-cart {
+    display: flex;
+    /* добавляем видимость кнопки Add  */
+}
+
+.product__box_content {
+    margin-top: 19px;
+    margin-left: 14px;
+}
+
+.product__box_name {
+    font-size: 13px;
+    color: #222222;
+    text-transform: uppercase;
+    margin-top: 19px;
+    display: block;
+}
+
+.product__box_price {
+    color: #f16d7f;
+    font-size: 16px;
+    font-weight: 700;
+    padding-top: 15px;
+    padding-bottom: 21px;
+    text-transform: uppercase;
+}
+
+
+.product__box_add-to-cart {
+    border: 1px solid #ffffff;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 10px 12px 10px 12px;
+    display: none;
+    /* убрали display: flex; чтобы кнопка Add была видимой только в hover*/
+    color: rgba(255, 255, 255, 1);
+    position: absolute;
+    top: 97px;
+    left: 70px;
+    border-radius: 3px;
+
+    &_icon {
+        margin-right: 8px;
+        /* float: left;*/
+    }
+
+    &_p {
+        margin-top: 4px;
+        /* float: left;*/
+        color: rgba(255, 255, 255, 1);
+    }
+
+    &:hover {
+        box-shadow: 0 0 8px #fff;
+        /* выделение кнопки Add при наведении (для добавления в карзину) */
+    }
+}
+
+.product__box_form {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.product__box_button {
+    position: relative;
+    background-color: #f16d7f;
+    padding: 14px 24px;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.4px;
+    border: none;
+
+    &:hover {
+        background-color: rgba(131, 131, 131, 1);
+        color: rgba(192, 192, 192, 1);
+    }
+}
+
+/*--------------------------------*/
